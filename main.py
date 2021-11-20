@@ -1,14 +1,14 @@
 import ISS_Info
-import turtle
+from turtle import Turtle, Screen
 import time
 
-screen = turtle.Screen()
+screen = Screen()
 screen.setup(720,360)
 screen.setworldcoordinates(-180,-90,180,90)
 screen.bgpic("world.png")
 screen.register_shape("iss.gif")
 
-iss = turtle.Turtle()
+iss = Turtle()
 iss.penup()
 iss.shape("iss.gif")
 
